@@ -1,0 +1,78 @@
+
+  .factorial-container1 {
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+
+  .label001 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    display: block;
+  }
+
+  .input001 {
+    padding: 8px;
+    font-size: 16px;
+  }
+  .input002 {
+    padding: 6px;
+    font-size: 16px;
+  }
+
+  .button001 {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .button001:hover {
+    background-color: #45a049;
+  }
+
+  #result001 {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .container002 {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  #characterDisplay {
+    font-size: 36px;
+    padding: 20px;
+    background-color: #eee;
+    border-radius: 5px;
+}
+.h2r {
+  color: #333;
+}
+
+#currentTime {
+  font-size: 15px;
+  color: #555;
+}
+
+#coinPrices {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#coinPrices p {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #333;
+}

@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>PORTFOLIO</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="./styles1.css">
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- CSS: Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- CSS: Bootstrap v-5.3 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('IMG_3.jpg');
+  min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+  background-image: url("IMG_1.jpg");
+  min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+  background-image: url("IMG_1.jpg");
+  min-height: 400px;
+}
+.title-s {
+    font-size: 20px;
+  }
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> WORK</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+      <i class="fa fa-search"></i>
+    </a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">WORK</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">Mr <span class="w3-hide-small">Naronglit</span> Wongsrichoo</span>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">ABOUT ME</h3>
+  <p class="w3-center"><em>I love programming</em></p>
+  <p> I am a playful person. Likes computers, is interested in programming and is interested in computer 
+    equipment and modern IT items. and would like to work in computers or programs in a large company But 
+    now I still have to develop myself to be much better than this.</p>
+    <hr>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <p><b><i class="fa fa-user w3-margin-right"></i>My Name</b></p><br>
+      <img src="IMG_4.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+        <div class="about-info"><br><br><br>
+            <p><span class="title-s">Name: </span> <span>Naronglit Wongsrichoo</span></p>
+            <p><span class="title-s">Profile: </span> <span>Undergraduate students</span></p>
+            <p><span class="title-s">Email: </span> <span>naronglit.wo64@snru.ac.th</span></p>
+            <p><span class="title-s">FB: </span> <span>เอ็ม ยาชิ</span></p>
+            <p><span class="title-s">Phone: </span> <span>061-824-0907</span></p>
+          </div>
+      </div>
+  </div>
+  <p class="w3-large w3-center w3-padding-16">Im really good at:</p>
+  <p class="w3-wide"><i class="fa fa-laptop"></i>programming</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:65%">65%</div>
+  </div>
+  <p class="w3-wide"><i class="fa fa-laptop"></i>Web Design</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:60%">60%</div>
+  </div>
+  <p class="w3-wide"><i class="fa fa-laptop"></i>HTML</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:50%">50%</div>
+  </div>
+</div>
+
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">WORK,JAVASCRIPT,API,LAB</span>
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+  <h3 class="w3-center">JAVASCRIPT</h3>
+  <br>
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-row-padding w3-center">
+    <div class="factorial-container1">
+      <label class="label001" for="number001">Enter a number:</label>
+      <input class="input001" type="text" id="number001" placeholder="Enter a number">
+      <button class="button001" onclick="calculateFactorial()">Calculate Factorial</button>
+      <input class="input002" type="text" id="result001" readonly>
+    </div>
+    <div class="container002">
+      <label class="label001" for="radiusInput">Enter the radius of the circle:</label>
+      <input class="input001" type="number" id="radiusInput002" placeholder="Enter radius" />
+      <button class="button001" onclick="calculateRadius()">Find Radius of Circle</button>
+      <input class="input002" type="text" id="result002" readonly />
+    </div>
+    <div class="container002">
+      <label class="label001" for="fahrenheit">Enter Fahrenheit:</label>
+      <input class="input001" type="text" id="fahrenheit" placeholder="Enter temperature" oninput="convertTemperature()">
+      <button class="button001" onclick="convertTemperature()">Convert</button>
+      <input class="input002" type="text" id="result" readonly>
+    </div>
+    <div>
+      <h1>Single Character Changer</h1>
+      <div id="characterDisplay"></div>
+  </div><br><br>
+  <div class="w3-row w3-center w3-card w3-padding">
+    <h2>Random Dog Image</h2>
+    <button onclick="fetchRandomDog()">Get Random Dog</button>
+    <img id="dogImage" width="400" height="300" src="" alt="Random Dog" style="display:none;">
+  </div>
+
+  <br><br><br>
+<!-- First Chart -->
+<h2>Chart</h2>
+<div style="width: 50%; float: left;">
+  <canvas id="chart1"></canvas>
+</div>
+
+<!-- Second Chart -->
+<div style="width: 50%; float: left;">
+  <canvas id="chart2"></canvas>
+</div>
+<br><br><br><br>
+
+<div class="py-lg-5 py-md-4 py-sm-3 py-2"></div>
+                <div class="row justify-content-center pt-5">
+                    <div class="col-lg-7 col-md-10">
+                        <h3 class="fw-normal text-center mb-5 border-bottom pb-2">Google Sheet Form</h3>
+ 
+                        <form class="form_overlay" method="POST" accept-charset="UTF-8" autocomplete="off" name="contact"> 
+                            <div class="row g-4">
+                                <div class="col-lg-6">
+                                    <div class="input_overlay">
+                                        <label for="fname" class="lable">Enter your name</label>
+                                        <input type="text" name="name" class="form-control" required autocomplete="off">
+                                    </div>
+                                </div>
+                              
+                                <div class="col-lg-6">
+                                    <div class="input_overlay">
+                                        <label for="email" class="lable">Enter email address</label>
+                                        <input type="text" name="email" class="form-control" required autocomplete="off">
+                                    </div>
+                                </div>  
+                                <div class="col-12 text-end">
+                                <button type="submit" class="btn btn-primary mt-3">Submit</button>
+                                </div>
+                                <p id="demo"></p>
+                            </div>
+                             
+                        </form>
+                    </div>
+                </div>
+                <br><br>
+<div class="col-md-6">
+  <div class="title-box-2 pt-4 pt-md-0">
+    <h5 class="title-left">
+      Result Show
+    </h5>
+  </div>
+  <div class="more-info">
+    <iframe src="https://docs.google.com/spreadsheets/d/1lBUh8W-YEJP4ct0Y7QWBpH2H52KIbqrJh22XP9aYBd4/edit?usp=sharing" width="500px" height="400px"></iframe>
+  </div>
+</div>
+
+<hr><br>
+<h2 class="h2r">Coinbase API Demo</h2>
+<p>เวลาปัจจุบัน: <span id="currentTime"></span></p>
+<div id="coinPrices"></div>
+
+<hr>
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+  </div>
+</div>
+<hr>
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64" id="contact">
+  <h3 class="w3-center">WHERE I WORK</h3>
+  <p class="w3-center"><em>I'd love your feedback!</em></p>
+
+  <div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m4 w3-container">
+      <img src="map.png" class="w3-image w3-round" style="width:150%  ">
+    </div>
+    <div class="w3-col m8 w3-panel">
+      <div class="w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Sakon Nakhon Rajabhat University<br>
+        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: 0618240907<br>
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: naronglit.wo64@snru.ac.th<br>
+      </div>
+      <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+          </div>
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+          </div>
+        </div>
+        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+        <button class="w3-button w3-black w3-right w3-section" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+function fetchRandomDog() {
+  // Fetch data from the API
+  fetch('https://random.dog/woof.json')
+      .then(response => response.json())
+      .then(data => {
+          const url = data.url;
+
+          // Update the image source with the fetched URL
+          document.getElementById('dogImage').src = url;
+
+          // Display the image
+          document.getElementById('dogImage').style.display = 'block';
+      })
+      .catch(error => {
+          console.error('Error fetching random dog:', error);
+      });
+}
+</script>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxwm88P0rXwP2TSOs7xw_ssvXaNc-CQPDiMDFOwl-SVsEu14P8SVKaOtq11jvqMRYvd/exec'
+  const form = document.forms['contact']
+  
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => document.getElementById("demo").innerHTML = "<div class='alert alert-primary' role='alert'><b>Thank You for providing the details, We shall get back to you shortly !</b></div>",contact.reset())
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+<script src="./JsLAb.js"></script>
+</body>
+</html>
